@@ -5,16 +5,11 @@
       "src": "server/server.js",
       "use": "@vercel/node"
     }
-    
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/server/server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/client/dist/index.html"
+      "src": "/api/(.*)",
+      "dest": "server/server.js"
     }
   ]
 }
